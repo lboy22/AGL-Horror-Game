@@ -5,10 +5,14 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 
 {
-
-    [SerializeField] private float moveSpeed = 5f;
-    public Rigidbody2D rigidBody;
+    public float moveSpeed = 0.1f;
+    private Rigidbody2D rb;
     Vector2 movement;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -19,6 +23,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidBody.MovePosition(rigidBody.position + movement * moveSpeed);
+        rb.MovePosition(rb.position + movement * moveSpeed);
     }
 }
