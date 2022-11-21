@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Collectible
   layers:
   - Default
   - TransparentFX
@@ -11,6 +12,11 @@ TagManager:
   - 
   - Water
   - UI
+  - Flowers
+  - Grass
+  - Collectibles
+  - 
+  - Player
   - 
   - 
   - 
@@ -23,11 +29,6 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - Layer 1
-  - Layer 2
-  - Layer 3
   - 
   - 
   - 
@@ -41,12 +42,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Layer 1
-    uniqueID: 2425651459
-    locked: 0
-  - name: Layer 2
+  - name: Grass
     uniqueID: 4250941897
     locked: 0
-  - name: Layer 3
-    uniqueID: 4189426099
+  - name: Decoration
+    uniqueID: 2647833741
+    locked: 0
+  - name: Walls
+    uniqueID: 999071159
+    locked: 0
+  - name: Collectibles
+    uniqueID: 605919823
+    locked: 0
+  - name: Player
+    uniqueID: 2425651459
     locked: 0
