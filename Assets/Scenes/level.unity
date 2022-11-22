@@ -9749,8 +9749,19 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1859212293}
   m_Enabled: 1
+<<<<<<< Updated upstream
 --- !u!20 &1859212295
 Camera:
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0518311b544be643ba8995eff0e2851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 15
+  seconds: {fileID: 1340371073}
+--- !u!114 &1340371073
+MonoBehaviour:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
