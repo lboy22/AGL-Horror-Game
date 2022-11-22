@@ -4541,6 +4541,7 @@ GameObject:
   - component: {fileID: 854575839}
   - component: {fileID: 854575844}
   - component: {fileID: 854575845}
+  - component: {fileID: 854575846}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -4560,7 +4561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec2eb958a91da8743931b06919c44cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.1
+  moveSpeed: 0.07
   animator: {fileID: 854575845}
 --- !u!61 &854575840
 BoxCollider2D:
@@ -4710,6 +4711,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &854575846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854575838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dca6a970bfe97340bea8c237a9bf934, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &869049451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8595,7 +8608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0518311b544be643ba8995eff0e2851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 5
+  timer: 100
   seconds: {fileID: 1340371073}
 --- !u!114 &1340371073
 MonoBehaviour:
