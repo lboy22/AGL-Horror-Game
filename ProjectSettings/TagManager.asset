@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collectible
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - Flowers
   - Grass
   - Collectibles
-  - 
+  - Enemy
   - Player
   - 
   - 
@@ -53,6 +54,9 @@ TagManager:
     locked: 0
   - name: Collectibles
     uniqueID: 605919823
+    locked: 0
+  - name: Enemy
+    uniqueID: 2665849557
     locked: 0
   - name: Player
     uniqueID: 2425651459
