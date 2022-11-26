@@ -8,6 +8,9 @@ public class EnemyLogic : MonoBehaviour
     public Transform[] spawnPoints;
     public GameObject objectPrefab;
 
+    private float nextActionTime = 0.0f;
+    public float period = 5;
+
     GameObject a;
 
     private void Start()
@@ -26,8 +29,10 @@ public class EnemyLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+
+        if (Time.time > nextActionTime)
         {
+            nextActionTime = Time.time + period;
             SpawnEnemy();
         }      
     }
