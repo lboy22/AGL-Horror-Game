@@ -11,19 +11,19 @@ public class EnemyLogic : MonoBehaviour
     private float nextActionTime = 0.0f;
     public float period = 5;
 
-    GameObject a;
+    GameObject enemyObject;
 
     private void Start()
     {
         randSpawnPoint = Random.Range(0, spawnPoints.Length);
-        a = Instantiate(objectPrefab, spawnPoints[randSpawnPoint].position, transform.rotation);
+        enemyObject = Instantiate(objectPrefab, spawnPoints[randSpawnPoint].position, transform.rotation);
     }
 
     void SpawnEnemy()
     {
-        Destroy(a);
+        Destroy(enemyObject);
         randSpawnPoint = Random.Range(0, spawnPoints.Length);
-        a = Instantiate(objectPrefab, spawnPoints[randSpawnPoint].position, transform.rotation);
+        enemyObject = Instantiate(objectPrefab, spawnPoints[randSpawnPoint].position, transform.rotation);
     }
 
     // Update is called once per frame
