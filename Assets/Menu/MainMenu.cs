@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        //Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
     }
 }

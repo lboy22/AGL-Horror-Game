@@ -15,8 +15,8 @@ public class EnemyLogic : MonoBehaviour
 
     private void Start()
     {
-        randSpawnPoint = Random.Range(0, spawnPoints.Length);
-        enemyObject = Instantiate(objectPrefab, spawnPoints[randSpawnPoint].position, transform.rotation);
+            randSpawnPoint = Random.Range(0, spawnPoints.Length);
+            enemyObject = Instantiate(objectPrefab, spawnPoints[randSpawnPoint].position, transform.rotation);       
     }
 
     void SpawnEnemy()
@@ -35,13 +35,5 @@ public class EnemyLogic : MonoBehaviour
             nextActionTime = Time.time + period;
             SpawnEnemy();
         }      
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            UnityEditor.EditorApplication.isPlaying = false;
-        }
     }
 }
